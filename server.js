@@ -24,10 +24,10 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.get("/complement", function(req, res) {
+app.get("/complement", function(req, res) {//this is complement endpoint, complement as an API
   res
     .json({
-      complement: getRandomComplement()
+      complement: getRandomComplement()// complement is one KEY
     })
     .end();
 });
